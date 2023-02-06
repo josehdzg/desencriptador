@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Encriptador Challenge Alura ONE</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Frame6.png" alt="logo de alura" >
+    </header>
+    <main class="columnas">
+        <section class="columnEnc">
+            <textarea class="text-area" cols="30" rows="7" style="resize: both;" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="informacion">
+                <figure class="nota">
+                    <img class="exclamacion" src="bi_exclamation-circle-fill.png" alt="exclamacion">
+                    <figcaption>Solo letras minúsculas y sin acentos</figcaption>
+                </figure>
+
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="columnDec">
+            <textarea class="mensaje" cols="20" rows="7"></textarea>
+            <div class="copyBtn">
+
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+<footer class="footer"><p>Elaborado por José María Hernández García</p>
+</footer>
+</html>
